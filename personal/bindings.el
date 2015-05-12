@@ -24,10 +24,6 @@
 ;; reload changed buffer
 (global-set-key "\M-r" 'revert-buffer)
 
-;; TODO: get function
-;; Perform general cleanup.
-(global-set-key (kbd "C-c n") 'cleanup-buffer)
-
 ;;
 ;; FINDING STUFF
 ;;
@@ -38,23 +34,9 @@
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
-;; TODO: get function
 ;; Jump to a definition in the current file. (This is awesome.)
-(global-set-key (kbd "C-o") 'ido-imenu)
+(global-set-key (kbd "C-o") 'prelude-goto-symbol)
 
-;; TODO: isearch mode
-;; Yank current word into isearch
-(define-key isearch-mode-map (kbd "C-x") 'isearch-yank-current-word)
-
-;; Delete the whole non matching part
-(define-key isearch-mode-map (kbd "DEL") 'isearch-delete-something)
-
-;; Exit search at the end
-(define-key isearch-mode-map [(control return)] 'isearch-exit-other-end)
-
-(define-key isearch-mode-map [(meta z)] 'zap-to-isearch)
-
-;; TODO: ido-mode
 ;; File finding
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
 (global-set-key (kbd "C-x C-M-f") 'find-file-in-project)
@@ -104,8 +86,12 @@
 ;;
 ;; EDITING
 ;;
+
 (global-set-key (kbd "M-<down>") 'move-text-down)
 (global-set-key (kbd "M-<up>") 'move-text-up)
+
+(global-set-key (kbd "C-+") 'er/contract-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 ;;
 ;; FLYSPELL

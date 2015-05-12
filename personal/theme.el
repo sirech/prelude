@@ -1,5 +1,7 @@
 ;;; theme.el --- Choose a theme for emacs
 
+;;; Code:
+
 (prelude-require-packages '(solarized-theme powerline))
 
 ;; high contrast modeline
