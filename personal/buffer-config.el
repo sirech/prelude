@@ -1,10 +1,12 @@
-;;; defuns-buffer.el --- Buffer related functions
+;;; buffer-config.el --- Buffer related functions
 
 ;;; Commentary:
 
 ;; Useful functions to manipulate buffers.
 
 ;;; Code:
+
+(prelude-require-package 'ace-window)
 
 (defun rotate-windows ()
   "Rotate your windows"
@@ -41,5 +43,5 @@
       (kill-new filename)
       (message "Copied buffer file name '%s' to the clipboard." filename))))
 
-(provide 'defuns-buffer)
-;;; defuns-buffer.el ends here
+(provide 'buffer-config)
+;;; buffer-config.el ends here

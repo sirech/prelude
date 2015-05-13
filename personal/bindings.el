@@ -58,9 +58,11 @@
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 
-;; TODO: get function
 ;; Rotate window
 (global-set-key (kbd "C-x C-o") 'rotate-windows)
+
+;; Moving around windows
+(global-set-key (kbd "C-x o") 'ace-window)
 
 ;;
 ;; INDENTING / COMMENTS
