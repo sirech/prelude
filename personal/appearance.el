@@ -9,6 +9,7 @@
 (when window-system
   (setq frame-title-format '(buffer-file-name "%f" ("%b")))
   (tooltip-mode -1)
+  (scroll-bar-mode -1)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
   (column-number-mode 't))
@@ -22,7 +23,7 @@
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 
 ;; Use inconsolata font
-(set-face-attribute 'default nil :family "Inconsolata" :height 160)
+(set-face-attribute 'default nil :family "Inconsolata" :height 150)
 
 (provide 'appearance)
 ;;; appearance.el ends here
