@@ -95,6 +95,8 @@
 (global-set-key (kbd "C-+") 'er/contract-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+(browse-kill-ring-default-keybindings)
+
 ;;
 ;; FLYSPELL
 ;;
