@@ -65,6 +65,12 @@
 (global-set-key (kbd "C-x o") 'ace-window)
 
 ;;
+;; MOVING INSIDE A BUFFER
+;;
+
+(global-set-key [remap goto-line] 'goto-line-with-feedback)
+
+;;
 ;; INDENTING / COMMENTS
 ;;
 
