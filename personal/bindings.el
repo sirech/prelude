@@ -13,9 +13,9 @@ This function works whether the package was loaded already or
 not.
 "
   (let* ((suffix (or given-suffix "-mode-map"))
-        (map (intern (concat
-                      (symbol-name package)
-                      suffix))))
+         (map (intern (concat
+                       (symbol-name package)
+                       suffix))))
     (if (featurep package)
         (progn
           (message "Unsetting key %s for %s" key package)
@@ -63,10 +63,7 @@ not.
 
 ;; File finding
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
-(global-set-key (kbd "C-x C-M-f") 'find-file-in-project)
 (global-set-key (kbd "C-x f") 'prelude-recentf-ido-find-file)
-(global-set-key (kbd "C-c y") 'bury-buffer)
-(global-set-key (kbd "M-`") 'file-cache-minibuffer-complete)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; ctags
@@ -99,6 +96,7 @@ not.
 ;;
 
 ;; make commenting/uncommenting easy
+(unset-local-key 'flyspell (kbd "C-;"))
 (global-set-key (kbd "C-;") 'comment-region)
 (global-set-key (kbd "C-'") 'uncomment-region)
 
@@ -110,8 +108,6 @@ not.
 ;; RECTANGLE
 ;;
 
-;; Surround a rectangle from the left and the right
-(define-key ctl-x-r-map "u" 'surround-rectangle-with)
 ;; Insert something before a rectangle
 (define-key ctl-x-r-map "p" 'string-insert-rectangle)
 
@@ -119,21 +115,10 @@ not.
 ;; EDITING
 ;;
 
-(global-set-key (kbd "M-<down>") 'move-text-down)
-(global-set-key (kbd "M-<up>") 'move-text-up)
-
 (global-set-key (kbd "C-+") 'er/contract-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 (browse-kill-ring-default-keybindings)
-
-;;
-;; FLYSPELL
-;;
-
-(eval-after-load 'flyspell
-  '(progn
-     (define-key flyspell-mode-map (kbd "C-;") 'nil)))
 
 (provide 'bindings)
 ;;; bindings.el ends here
