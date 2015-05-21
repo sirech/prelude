@@ -1,6 +1,6 @@
 ;;; isearch-config.el --- Configuration for isearch.
 
-;;; Comentary:
+;;; Commentary:
 
 ;; Extra functions and configuration related to isearch.
 

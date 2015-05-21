@@ -1,6 +1,6 @@
 ;;; ido-config.el --- Configuration for ido.
 
-;;; Comentary:
+;;; Commentary:
 
 ;; Extra functions and configuration related to ido.
 

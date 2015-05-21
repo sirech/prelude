@@ -1,6 +1,6 @@
 ;;; flycheck-config.el --- Configuration for flycheck.
 
-;;; Comentary:
+;;; Commentary:
 
 ;; Extra functions and configuration related to flycheck.
 
