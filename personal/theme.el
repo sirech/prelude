@@ -8,7 +8,7 @@
 (setq solarized-high-contrast-mode-line t)
 
 (load-theme 'solarized-dark t)
-(powerline-default-theme)
+(powerline-center-theme)
 
 (provide 'theme)
 ;;; theme.el ends here
