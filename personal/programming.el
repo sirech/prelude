@@ -15,11 +15,12 @@
 (setq js2-indent-on-enter-key t)
 
 ;; Ruby
-(prelude-require-package 'rbenv)
+(when (executable-find "rbenv")
+  (prelude-require-package 'rbenv)
 
-(require 'rbenv)
-(rbenv--setup)
-(rbenv-use-global)
+  (require 'rbenv)
+  (rbenv--setup)
+  (rbenv-use-global))
 
 (provide 'programming)
 ;;; programming.el ends here
