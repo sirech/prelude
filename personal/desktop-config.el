@@ -6,7 +6,7 @@
 
 ;;; Code:
 
-(setq desktop-path (list prelude-dir))
+(setq desktop-path (list prelude-savefile-dir))
 (desktop-save-mode 1)
 (defadvice desktop-read (around trace-desktop-errors)
   (let ((old-debug-on-error debug-on-error))
