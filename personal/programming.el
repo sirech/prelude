@@ -15,6 +15,8 @@
 (setq js2-indent-on-enter-key t)
 
 ;; Ruby
+(prelude-require-package 'ruby-hash-syntax)
+
 (when (executable-find "rbenv")
   (prelude-require-package 'rbenv)
 
