@@ -67,9 +67,9 @@ not.
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; ctags
-(global-set-key (kbd "M-.") 'my-find-tag)
-(global-set-key (kbd "M->") 'pop-tag-mark)
-(global-set-key (kbd "M-?") 'tags-search)
+;; (global-set-key (kbd "M-.") 'my-find-tag)
+;; (global-set-key (kbd "M->") 'pop-tag-mark)
+;; (global-set-key (kbd "M-?") 'tags-search)
 
 ;;
 ;; MOVING BETWEEN WINDOWS
