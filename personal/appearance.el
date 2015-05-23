@@ -22,8 +22,5 @@
 ;; Support visual lines
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 
-;; Use inconsolata font
-(set-face-attribute 'default nil :family "Inconsolata" :height 150)
-
 (provide 'appearance)
 ;;; appearance.el ends here
