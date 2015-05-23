@@ -76,9 +76,14 @@
 ;;
 
 ;; make commenting/uncommenting easy
+
+;; TODO: M-; can replace this altogether. Also, see if the flyspell
+;; one is required or conflicts with ruby tools
 (unset-local-key 'flyspell (kbd "C-;"))
-(global-set-key (kbd "C-;") 'comment-region)
-(global-set-key (kbd "C-'") 'uncomment-region)
+;; (unset-local-key 'ruby-tools (kbd "C-;"))
+;; (global-set-key (kbd "C-;") 'comment-region)
+;; (unset-local-key 'ruby-tools (kbd "C-'"))
+;; (global-set-key (kbd "C-'") 'uncomment-region)
 
 ;; TODO: remove if needed
 ;; enter indents automatically
