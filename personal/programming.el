@@ -15,14 +15,20 @@
 (setq js2-indent-on-enter-key t)
 
 ;; Ruby
-(prelude-require-package 'ruby-hash-syntax)
+(prelude-require-packages '(ruby-hash-syntax robe))
 
+;; rbenv
 (when (executable-find "rbenv")
   (prelude-require-package 'rbenv)
 
   (require 'rbenv)
   (rbenv--setup)
   (rbenv-use-global))
+
+;; Robe
+(add-hook 'ruby-mode-hook 'robe-mode)
+(when (featurep 'prelude-company)
+  (push 'company-robe company-backends))
 
 (provide 'programming)
 ;;; programming.el ends here
