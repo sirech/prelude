@@ -12,8 +12,8 @@
   (unset-local-key 'smartparens "\M-s")
   (global-set-key (kbd "M-s") 'company-complete)
 
-  ;; (define-key company-mode-map (kbd "C-n") 'company-select-next)
-  ;; (define-key company-mode-map (kbd "C-p") 'company-select-previous)
+  (define-key company-active-map (kbd "C-n") 'company-select-next)
+  (define-key company-active-map (kbd "C-p") 'company-select-previous)
 
   (setq company-idle-delay 1.5))
 
