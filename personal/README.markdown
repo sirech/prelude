@@ -6,6 +6,8 @@
 
 ### Utilities
 
+* ack
+* ag
 * aspell
 
 ### Programming

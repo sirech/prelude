@@ -15,7 +15,9 @@
 
   (when (featurep 'prelude-key-chord)
     (key-chord-define-global "yy" 'helm-show-kill-ring)
-    (key-chord-define-global "xx" 'helm-M-x)))
+    (key-chord-define-global "xx" 'helm-M-x))
+
+  (prelude-require-package 'helm-ag))
 
 (provide 'helm-config)
 ;;; helm-config.el ends here
