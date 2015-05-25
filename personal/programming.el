@@ -8,7 +8,7 @@
 
 ;; JS
 
-(setq js2-basic-offset 2)
+(setq-default js2-basic-offset 2)
 (setq js2-bounce-indent t)
 (setq js2-cleanup-whitespace t)
 (setq js2-highlight-level 3)
