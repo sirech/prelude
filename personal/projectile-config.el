@@ -8,7 +8,8 @@
 
 ;; Settings
 (setq projectile-enable-caching t)
-(add-to-list 'projectile-globally-ignored-files "gems.tags" "tags")
+(add-to-list-multiple 'projectile-globally-ignored-files '("gems.tags" "tags"))
+(add-to-list-multiple 'grep-find-ignored-directories '("tmp" "coverage"))
 
 (provide 'projectile-config)
 ;;; projectile-config.el ends here

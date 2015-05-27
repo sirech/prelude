@@ -28,5 +28,13 @@ not.
            (message "Unsetting key %s for %s" key package)
            (define-key (eval map) key nil))))))
 
+(defun add-to-list-multiple (list to-add)
+  "Adds multiple items to list.
+Allows for adding a sequence of items to the same list, rather
+than having to call `add-to-list' multiple times."
+  (interactive)
+  (dolist (item to-add)
+    (add-to-list list item)))
+
 (provide 'helpers)
 ;;; helpers.el ends here
