@@ -18,7 +18,7 @@
 (prelude-require-packages '(ruby-hash-syntax robe))
 
 ;; rbenv
-(when (executable-find "rbenv")
+(when (file-exists-p "~/.rbenv")
   (prelude-require-package 'rbenv)
 
   (require 'rbenv)
