@@ -73,6 +73,7 @@ and the point, not include the isearch word."
 (define-key isearch-mode-map (kbd "DEL") 'isearch-delete-something)
 (define-key isearch-mode-map [(control return)] 'isearch-exit-other-end)
 (define-key isearch-mode-map [(meta z)] 'zap-to-isearch)
+(define-key isearch-mode-map (kbd "C-'") 'avy-isearch)
 
 (provide 'isearch-config)
 ;;; isearch-config.el ends here
