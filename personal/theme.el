@@ -7,7 +7,7 @@
 ;; high contrast modeline
 (setq solarized-high-contrast-mode-line t)
 
-(load-theme 'solarized-dark t)
+(load-theme 'solarized-light t)
 (powerline-center-theme)
 
 (provide 'theme)
