@@ -30,5 +30,7 @@
 (when (featurep 'prelude-company)
   (push 'company-robe company-backends))
 
+(setq ruby-insert-encoding-magic-comment nil)
+
 (provide 'programming)
 ;;; programming.el ends here
