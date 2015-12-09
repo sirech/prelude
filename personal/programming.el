@@ -6,6 +6,8 @@
 
 ;;; Code:
 
+(prelude-require-package 'which-key)
+
 ;; Web Mode
 
 (setq web-mode-markup-indent-offset 2)
