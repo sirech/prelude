@@ -9,8 +9,8 @@
         ad-do-it)
     ad-do-it))
 
-(prelude-require-package 'jsx-mode)
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . jsx-mode))
+;;(prelude-require-package 'jsx-mode)
+;;(add-to-list 'auto-mode-alist '("\\.jsx\\'" . jsx-mode))
 
 (provide 'jsx-config)
 ;;; jsx-config.el ends here
