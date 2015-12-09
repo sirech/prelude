@@ -75,10 +75,6 @@
 ;; INDENTING / COMMENTS
 ;;
 
-;; TODO: M-; can replace this altogether. Also, see if the flyspell
-;; one is required or conflicts with ruby tools
-(unset-local-key 'flyspell (kbd "C-;"))
-
 ;; TODO: remove if needed
 ;; enter indents automatically
 ;;(global-set-key (kbd "RET") 'newline-and-indent)
