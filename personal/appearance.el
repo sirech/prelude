@@ -1,6 +1,7 @@
 ;;; appearance.el --- How emacs looks
 
-(setq visible-bell t
+(setq visible-bell nil
+      ring-bell-function 'ignore
       font-lock-maximum-decoration t
       inhibit-startup-message t
       color-theme-is-global t
