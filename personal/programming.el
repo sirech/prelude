@@ -40,5 +40,8 @@
 
 (setq ruby-insert-encoding-magic-comment nil)
 
+;; Lua
+(setq lua-indent-level 4)
+
 (provide 'programming)
 ;;; programming.el ends here
