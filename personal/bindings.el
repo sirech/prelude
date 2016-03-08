@@ -39,7 +39,7 @@
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
 ;; Jump to a definition in the current file. (This is awesome.)
-(global-set-key (kbd "C-o") 'prelude-goto-symbol)
+(global-set-key (kbd "C-o") 'imenu-anywhere)
 
 ;; File finding
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
